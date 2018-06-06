@@ -6,7 +6,7 @@ class Pizza:
         self.ingredients = ingredients
 
     def __repr__(self):
-        return (f"Pizza size is : {self.radius}, and ingredients are: {self.ingredients}")
+        return "Pizza size is : {0}, and ingredients are: {1}".format(self.radius, self.ingredients)
     def area(self):
         return self.circle_area(self.radius)
 
@@ -18,7 +18,6 @@ class Pizza:
     @classmethod
     def margherita(cls):
         return cls(3,["mozzarella", "tomatoes"])
-
 
 
 havana = Pizza(4, ['mozzarella', 'tomatoes'])
